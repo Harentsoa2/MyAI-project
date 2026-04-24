@@ -1,10 +1,19 @@
-const { PrismaClient } =  require("@prisma/client");
+require("dotenv/config");
 
-const db = new PrismaClient();
+const { PrismaClient } = require("@prisma/client");
+
+const db = new PrismaClient({
+    datasources: {
+        db: {
+            url: process.env.DIRECT_URL ?? process.env.DATABASE_URL,
+        },
+    },
+});
 
 async function main() {
     try {
         await db.category.createMany({
+            skipDuplicates: true,
             data: [
                 {name: "Famous"},
                 {name: "Movies & TV"},
