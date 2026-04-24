@@ -45,13 +45,13 @@ export const SideBar = ({ isPro }: SideBarProps) => {
 
 
     return (
-        <div className="space-y-4 flex flex-col items-center border h-full text-primary bg-secondary">
+        <div className="space-y-4 flex flex-col items-center border border-violet-500/10 h-full text-violet-700 bg-violet-50/80 dark:text-violet-300 dark:bg-zinc-900/80 backdrop-blur-xl">
             <div className="p-3 flex flex-1 justify-center">
                 <div className="space-y-2">
                     {routes.map((route) => (
                         <div onClick={() => onNavigate(route.href, route.pro)} key={route.href} 
-                            className={cn("text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-primary hover:bg-primary/10 rounded-lg transition",
-                            pathname === route.href && "text-primary bg-primary/10")}>
+                            className={cn("text-muted-foreground text-xs group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-violet-700 hover:bg-violet-500/10 rounded-lg transition",
+                            pathname === route.href && "text-violet-700 bg-violet-500/10 dark:text-violet-300")}>
                                 <div className="flex flex-col gap-y-2 items-center flex-1">
                                     <route.icon className="h-5 w-5"/>
                                     {route.label}

@@ -32,7 +32,7 @@ const Characters = ({ data }: CharacterProps) => {
         {data.map((item) => (
             <Card
                 key={item.id}
-                className='bg-primary/10 rounded-xl cursor-pointer hover:opacity-90 max-md:shadow-xl transition border-0'
+                className='bg-violet-500/10 rounded-xl cursor-pointer hover:opacity-90 max-md:shadow-xl transition border-0'
             >
                 <Link href={`/chat/${item.id}`} className='flex flex-col items-center justify-between h-full'>
                     <CardHeader className="flex items-center px-2 pt-[0.85rem] pb-4">

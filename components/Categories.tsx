@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import qs from "query-string"
 
 import { cn } from "@/lib/utils";
-import { PiLightning, PiLightningFill, PiLightningThin } from "react-icons/pi";
+import { PiLightning, PiLightningFill } from "react-icons/pi";
 
 interface CategoriesProps{
     data: Category[];
@@ -29,18 +29,18 @@ export const Categories = ({data} : CategoriesProps) => {
   return (
     <div className="w-full overflow-x-auto space-x-3 flex p-1 max-sm:pb-4 animate-in slide-in-from-right-72 duration-700 delay-150">
         <button onClick={() => onClick(undefined)} className={cn(`
-            flex items-center text-center text-xs text-primary/80 md:text-[0.85rem] px-3 py-2
-            rounded-full font-semibold bg-primary-foreground hover:border-opacity-60 hover:bg-emerald-400/50 transition border border-emerald-400 
-        `, !categoryId && 'bg-emerald-500 text-white hover:bg-emerald-500 border-emerald-500')}>
+            flex items-center text-center text-xs text-violet-700 md:text-[0.85rem] px-3 py-2
+            rounded-full font-semibold bg-violet-50 hover:border-opacity-60 hover:bg-violet-500/10 transition border border-violet-500/20 
+        `, !categoryId && 'bg-violet-600 text-white hover:bg-violet-600 border-violet-600')}>
             Latest
         </button>
         <button
             onClick={() => onClick("trending")}
             className={cn(
             `
-                flex items-center text-center text-xs text-primary/80 md:text-[0.85rem] px-3 py-2
-                rounded-full font-semibold whitespace-nowrap bg-primary-foreground hover:border-opacity-60 hover:bg-emerald-400/50 transition border border-emerald-400 
-            `, categoryId === "trending" && "bg-emerald-500 text-white hover:bg-emerald-500  border-emerald-500"
+                flex items-center text-center text-xs text-violet-700 md:text-[0.85rem] px-3 py-2
+                rounded-full font-semibold whitespace-nowrap bg-violet-50 hover:border-opacity-60 hover:bg-violet-500/10 transition border border-violet-500/20 
+            `, categoryId === "trending" && "bg-violet-600 text-white hover:bg-violet-600  border-violet-600"
             )}
         >
             <div className="flex gap-x-1 items-center justify-center pr-1">
@@ -50,9 +50,9 @@ export const Categories = ({data} : CategoriesProps) => {
         {
             data && data.map((category) => (
                 <button onClick={() => onClick(category.id)} key={category.id} className={cn(`
-                    flex items-center text-center text-xs text-primary/80 md:text-[0.85rem] px-3 py-2
-                    rounded-full whitespace-nowrap font-semibold bg-primary-foreground hover:border-opacity-60 hover:bg-emerald-400/50 transition border border-emerald-400 
-                `, category.id === categoryId && 'bg-emerald-500 text-white hover:bg-emerald-500 border-emerald-500')}>
+                    flex items-center text-center text-xs text-violet-700 md:text-[0.85rem] px-3 py-2
+                    rounded-full whitespace-nowrap font-semibold bg-violet-50 hover:border-opacity-60 hover:bg-violet-500/10 transition border border-violet-500/20 
+                `, category.id === categoryId && 'bg-violet-600 text-white hover:bg-violet-600 border-violet-600')}>
                     {category.name}
                 </button>
             ))

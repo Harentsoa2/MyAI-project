@@ -20,7 +20,7 @@ export const MobileSidebar = ({ isPro }: MSideBarProps) => {
       <SheetTrigger className="md:hidden pr-4 pl-4 ">
         <HiOutlineMenuAlt1 className="text-primary" />
       </SheetTrigger>
-      <SheetContent side="left" className="p-0 bg-secondary pt-10 w-32">
+      <SheetContent side="left" className="p-0 bg-violet-50/90 dark:bg-zinc-900/90 pt-10 w-32">
         <SheetTitle className="sr-only">MyAI navigation</SheetTitle>
         <div className="px-3 pb-4">
           <MyAiLogo compact />

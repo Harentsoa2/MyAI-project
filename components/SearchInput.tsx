@@ -39,9 +39,13 @@ export const SearchInput = () => {
 
     return (
         <div className='relative'>
-            <Search className="absolute h-4 w-4 top-3 left-4 text-muted-foreground "/>
-            <Input value={value} onChange={onChange} className="pl-10 bg-primary-foreground hover:bg-primary/10 focus-visible:ring-0 focus:border focus:border-emerald-500 rounded-lg" placeholder="Search..."
-             />
+            <Search className="absolute h-4 w-4 top-3 left-4 text-violet-500"/>
+            <Input
+              value={value}
+              onChange={onChange}
+              className="pl-10 bg-violet-50/70 hover:bg-violet-500/5 focus-visible:ring-0 focus:border focus:border-violet-500 rounded-lg dark:bg-violet-950/20"
+              placeholder="Search..."
+            />
         </div>
     )
 }   

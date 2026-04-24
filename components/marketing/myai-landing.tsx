@@ -265,10 +265,10 @@ export default function MyAiLanding() {
 
       <section className="mx-auto grid max-w-7xl gap-12 px-4 pb-18 pt-16 sm:px-6 lg:grid-cols-[1.04fr_0.96fr] lg:items-center lg:px-8 lg:pb-28 lg:pt-24">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-700 dark:text-violet-300">
-            <Sparkles className="h-4 w-4" />
-            Previously ChatNest AI
-          </div>
+        <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-700 dark:text-violet-300">
+          <Sparkles className="h-4 w-4" />
+          Premium AI companion
+        </div>
 
           <h1 className="mt-6 max-w-3xl text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
             Build an AI companion that remembers, adapts, and converts.

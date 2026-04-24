@@ -40,7 +40,7 @@ export function MyAiLogo({
           <p className={cn("font-semibold tracking-tight", compact ? "text-base" : "text-lg")}>
             MyAI
           </p>
-          <p className="text-xs text-muted-foreground">Previously ChatNest AI</p>
+          <p className="text-xs text-muted-foreground">Premium AI companion</p>
         </div>
       ) : null}
     </div>
